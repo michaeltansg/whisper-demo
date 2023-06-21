@@ -8,6 +8,7 @@ Demonstrates OpenAI's Whisper API. This project uses gradio for the interface to
 `pyenv` is used for this project. This will use the version of python defined in `.python-version` file. Activate the virtual environment and install dependencies like so:
 
 ```bash
+$ python -m venv venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
