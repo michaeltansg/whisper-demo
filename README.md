@@ -5,24 +5,28 @@ Demonstrates OpenAI's Whisper API. This project uses gradio for the interface to
 
 ### Non-WAV audio file format support
 
-If you are uploading non-WAV audio files (like mp3, m4a, etc), you will need to install ffmpeg.
+If you are uploading non-WAV audio files (like mp3, m4a, etc), you will need to install ffmpeg. FFmpeg is a free and open-source software project that produces libraries and programs for handling multimedia data. One of these programs is `ffprobe`, which is used to gather information from multimedia streams and is required by some Python libraries to handle non-WAV audio files.
 
-**macOS**
+Here's how you can install FFmpeg:
 
-```bash
+**On Ubuntu or other Debian-based systems**, you can install it using apt:
+
+```
+sudo apt update
+sudo apt install ffmpeg
+```
+
+**On macOS**, you can install it using Homebrew:
+
+```
 brew install ffmpeg
 ```
 
-**Linux**
+**On Windows**, the process is a bit more involved:
 
-```bash
-sudo apt-get update
-sudo apt-get install ffmpeg
-```
-
-**Windows**
-
-Refer to the official ffmpeg [download page](https://ffmpeg.org/download.html#build-windows) for the package and installation instructions.
+1. Download the FFmpeg build from the [official website](https://ffmpeg.org/download.html).
+2. Extract the downloaded ZIP file.
+3. Add the bin folder from the extracted file to your system path.
 
 ### Python Version and Virtual Environment
 
