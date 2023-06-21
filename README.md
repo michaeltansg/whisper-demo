@@ -53,3 +53,7 @@ Replace the OpenAI API Key `OPENAI_API_KEY` with your API key for this project.
 ```bash
 $ python app.py
 ```
+
+## TODOS
+
+Review LangChain's YouTube document loader for inspiration on how to better chunk the audio file.

@@ -14,7 +14,7 @@ def transcribe(audio_file_path):
     audio = AudioSegment.from_file(audio_file_path)
 
     # Determine chunk length in milliseconds
-    chunk_length_ms = 10000  # e.g., chunks of 10 seconds
+    chunk_length_ms = 30000  # e.g., chunks of 30 seconds
 
     # Make chunks of audio
     chunks = make_chunks(audio, chunk_length_ms)
